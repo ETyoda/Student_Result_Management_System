@@ -16,6 +16,6 @@ const Dashboard = () => {
       </PageLayout>
     </div>
   );
-};
+}; 
 
 export default Dashboard;

@@ -10,7 +10,7 @@ import About from "./Pages/About";
 import Sidebar from "./Components/Sidebar";
 import NoPage from "./Pages/NoPage";
 import PageLayout from "./Components/PageLayout";
-import ParentSide from "./Pages/ParentSide";
+import ParentSide from "./Pages/Payment Status";
 
 function App() {
   const userName = "Abebe";

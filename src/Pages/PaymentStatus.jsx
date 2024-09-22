@@ -1,6 +1,6 @@
 import PageLayout from "../Components/PageLayout";
 
-const ParentSide = () => {
+const PaymentStatus = () => {
     return (
         <div className="ml-64 flex-1 bg-gray-100 p-6 mt-[65px] min-h-screen">
             <PageLayout userName="Abebe" pageTitle="Payment Method">
@@ -34,4 +34,4 @@ const ParentSide = () => {
     );
 };
 
-export default ParentSide;
+export default PaymentStatus;

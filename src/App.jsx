@@ -10,7 +10,7 @@ import About from "./Pages/About";
 import Sidebar from "./Components/Sidebar";
 import NoPage from "./Pages/NoPage";
 import PageLayout from "./Components/PageLayout";
-import ParentSide from "./Pages/PaymentStatus";
+import PaymentStatus from "./Pages/PaymentStatus";
 
 function App() {
   const userName = "Abebe";
@@ -71,10 +71,10 @@ function App() {
               }
             />
              <Route
-              path="/parentSide"
+              path="/paymentstatus"
               element={
                 <PageLayout userName={userName} pageTitle="ParenPage">
-                  <ParentSide />
+                  <PaymentStatus />
                 </PageLayout>
               }
             />

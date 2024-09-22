@@ -1,6 +1,6 @@
 import PageLayout from "../Components/PageLayout";
 
-const PaymentStatus = () => {
+const ParentSides = () => {
     return (
         <div className="ml-64 flex-1 bg-gray-100 p-6 mt-[65px] min-h-screen">
             <PageLayout userName="Abebe" pageTitle="Payment Method">
@@ -13,7 +13,7 @@ const PaymentStatus = () => {
 
                     <div className="flex justify-between items-center">
                         <div>
-                            <h3 className="text-lg font-medium text-gray-700">Child's Performance Overview</h3>
+                            <h3 className="text-lg font-medium text-gray-700">Childs Performance Overview</h3>
                             <p className="text-sm text-gray-500">
                                 View detailed performance reports and insights.
                             </p>
@@ -34,4 +34,4 @@ const PaymentStatus = () => {
     );
 };
 
-export default PaymentStatus;
+export default ParentSides;

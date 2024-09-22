@@ -40,8 +40,8 @@ const Sidebar = () => {
           </li>
           <li className="sidebar__item flex items-center text-gray-600 hover:text-purple-600">
             <FaClock className="sidebar__icon mr-3" />
-            <Link to="/parentSide" className="sidebar__link">
-              Parent Sides
+            <Link to="/paymentstatus" className="sidebar__link">
+              Payment Status
             </Link>
           </li>
           <li className="sidebar__item flex items-center text-gray-600 hover:text-purple-600">

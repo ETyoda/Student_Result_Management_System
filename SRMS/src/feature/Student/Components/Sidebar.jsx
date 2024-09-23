@@ -18,7 +18,7 @@ const Sidebar = () => {
           <li className="sidebar__item flex items-center">
             <FaHome className="sidebar__icon mr-3" />
             <NavLink
-              to="/"
+              to="/student"
               className={({ isActive }) =>
                 `sidebar__NavLink flex-1 ${
                   isActive
@@ -33,7 +33,7 @@ const Sidebar = () => {
           <li className="sidebar__item flex items-center">
             <FaClipboard className="sidebar__icon mr-3" />
             <NavLink
-              to="/grade"
+              to="/student/grade"
               className={({ isActive }) =>
                 `sidebar__NavLink flex-1 ${
                   isActive
@@ -48,7 +48,7 @@ const Sidebar = () => {
           <li className="sidebar__item flex items-center">
             <FaCalendarAlt className="sidebar__icon mr-3" />
             <NavLink
-              to="/period"
+              to="/student/period"
               className={({ isActive }) =>
                 `sidebar__NavLink flex-1 ${
                   isActive
@@ -63,7 +63,7 @@ const Sidebar = () => {
           <li className="sidebar__item flex items-center">
             <FaClock className="sidebar__icon mr-3" />
             <NavLink
-              to="/exams"
+              to="/student/exams"
               className={({ isActive }) =>
                 `sidebar__NavLink flex-1 ${
                   isActive
@@ -78,7 +78,7 @@ const Sidebar = () => {
           <li className="sidebar__item flex items-center">
             <FaChartLine className="sidebar__icon mr-3" />
             <NavLink
-              to="/performance"
+              to="/student/performance"
               className={({ isActive }) =>
                 `sidebar__NavLink flex-1 ${
                   isActive
@@ -93,7 +93,7 @@ const Sidebar = () => {
           <li className="sidebar__item flex items-center">
             <FaInfoCircle className="sidebar__icon mr-3" />
             <NavLink
-              to="/about"
+              to="/student/about"
               className={({ isActive }) =>
                 `sidebar__NavLink flex-1 ${
                   isActive

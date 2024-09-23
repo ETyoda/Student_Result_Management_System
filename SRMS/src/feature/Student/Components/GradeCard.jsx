@@ -9,7 +9,7 @@ const GradeCard = ({ grade }) => {
 };
 
 GradeCard.propTypes = {
-  grade: PropTypes.number.isRequired,
+  grade: PropTypes.number,
 };
 
 export default GradeCard;

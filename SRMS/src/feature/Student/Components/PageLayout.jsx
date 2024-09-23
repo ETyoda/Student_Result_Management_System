@@ -11,9 +11,9 @@ const PageLayout = ({ userName, pageTitle, children }) => {
 };
 
 PageLayout.propTypes = {
-  userName: PropTypes.string.isRequired,
-  pageTitle: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
+  userName: PropTypes.string,
+  pageTitle: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default PageLayout;

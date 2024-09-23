@@ -53,8 +53,7 @@ function GradeTable({ semester }) {
 }
 
 GradeTable.propTypes = {
-  semester: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-    .isRequired,
+  semester: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 export default GradeTable;

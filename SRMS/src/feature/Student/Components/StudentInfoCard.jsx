@@ -22,9 +22,9 @@ const StudentInfoCard = ({ studentName, class_grade, student_id }) => {
 };
 
 StudentInfoCard.propTypes = {
-  studentName: PropTypes.string.isRequired,
-  class_grade: PropTypes.string.isRequired,
-  student_id: PropTypes.string.isRequired,
+  studentName: PropTypes.string,
+  class_grade: PropTypes.string,
+  student_id: PropTypes.string,
 };
 
 export default StudentInfoCard;

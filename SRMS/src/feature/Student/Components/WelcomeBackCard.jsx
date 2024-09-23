@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import studentImage from "../assets/student.png";
+import studentImage from "../../../assets/student.png";
 
 const WelcomeBackCard = ({ studentName }) => {
   return (
@@ -22,6 +22,6 @@ const WelcomeBackCard = ({ studentName }) => {
 };
 
 WelcomeBackCard.propTypes = {
-  studentName: PropTypes.string.isRequired,
+  studentName: PropTypes.string,
 };
 export default WelcomeBackCard;

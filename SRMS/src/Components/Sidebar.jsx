@@ -1,48 +1,109 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../Styles/Sidebar.css";
 
-import { FaHome, FaClipboard, FaCalendarAlt, FaClock } from "react-icons/fa";
+import {
+  FaHome,
+  FaClipboard,
+  FaCalendarAlt,
+  FaClock,
+  FaChartLine,
+  FaInfoCircle,
+} from "react-icons/fa";
 
 const Sidebar = () => {
   return (
     <aside className="sidebar w-64 bg-white border-r shadow-lg flex flex-col pt-16">
       <nav className="sidebar__nav flex flex-col flex-grow">
         <ul className="sidebar__list space-y-4 p-6">
-          <li className="sidebar__item flex items-center text-purple-600 font-semibold">
+          <li className="sidebar__item flex items-center">
             <FaHome className="sidebar__icon mr-3" />
-            <Link to="/" className="sidebar__link">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `sidebar__NavLink flex-1 ${
+                  isActive
+                    ? "text-black bg-blue-500 font-semibold"
+                    : "text-gray-600 hover:text-blue-500 hover:bg-blue-100"
+                }`
+              }
+            >
               Dashboard
-            </Link>
+            </NavLink>
           </li>
-          <li className="sidebar__item flex items-center text-gray-600 hover:text-purple-600">
+          <li className="sidebar__item flex items-center">
             <FaClipboard className="sidebar__icon mr-3" />
-            <Link to="/grade" className="sidebar__link">
+            <NavLink
+              to="/grade"
+              className={({ isActive }) =>
+                `sidebar__NavLink flex-1 ${
+                  isActive
+                    ? "text-black bg-blue-500 font-semibold"
+                    : "text-gray-600 hover:text-blue-500 hover:bg-blue-100"
+                }`
+              }
+            >
               Grade Result
-            </Link>
+            </NavLink>
           </li>
-          <li className="sidebar__item flex items-center text-gray-600 hover:text-purple-600">
+          <li className="sidebar__item flex items-center">
             <FaCalendarAlt className="sidebar__icon mr-3" />
-            <Link to="/report" className="sidebar__link">
-              Reports
-            </Link>
+            <NavLink
+              to="/period"
+              className={({ isActive }) =>
+                `sidebar__NavLink flex-1 ${
+                  isActive
+                    ? "text-black bg-blue-500 font-semibold"
+                    : "text-gray-600 hover:text-blue-500 hover:bg-blue-100"
+                }`
+              }
+            >
+              Period
+            </NavLink>
           </li>
-          <li className="sidebar__item flex items-center text-gray-600 hover:text-purple-600">
+          <li className="sidebar__item flex items-center">
             <FaClock className="sidebar__icon mr-3" />
-            <Link to="/exams" className="sidebar__link">
+            <NavLink
+              to="/exams"
+              className={({ isActive }) =>
+                `sidebar__NavLink flex-1 ${
+                  isActive
+                    ? "text-black bg-blue-500 font-semibold"
+                    : "text-gray-600 hover:text-blue-500 hover:bg-blue-100"
+                }`
+              }
+            >
               Exam Schedule
-            </Link>
+            </NavLink>
           </li>
-          <li className="sidebar__item flex items-center text-gray-600 hover:text-purple-600">
-            <FaClock className="sidebar__icon mr-3" />
-            <Link to="/performance" className="sidebar__link">
+          <li className="sidebar__item flex items-center">
+            <FaChartLine className="sidebar__icon mr-3" />
+            <NavLink
+              to="/performance"
+              className={({ isActive }) =>
+                `sidebar__NavLink flex-1 ${
+                  isActive
+                    ? "text-black bg-blue-500 font-semibold"
+                    : "text-gray-600 hover:text-blue-500 hover:bg-blue-100"
+                }`
+              }
+            >
               Performance
-            </Link>
+            </NavLink>
           </li>
-          <li className="sidebar__item flex items-center text-gray-600 hover:text-purple-600">
-            <FaClock className="sidebar__icon mr-3" />
-            <Link to="/about" className="sidebar__link">
+          <li className="sidebar__item flex items-center">
+            <FaInfoCircle className="sidebar__icon mr-3" />
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `sidebar__NavLink flex-1 ${
+                  isActive
+                    ? "text-black bg-blue-500 font-semibold"
+                    : "text-gray-600 hover:text-blue-500 hover:bg-blue-100"
+                }`
+              }
+            >
               About Us
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

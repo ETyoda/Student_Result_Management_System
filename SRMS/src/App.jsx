@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./Styles/App.css";
 import Dashboard from "./Pages/Dashboard";
 import GradeResult from "./Pages/GradeResult";
-import Report from "./Pages/Report";
+import Period from "./Pages/Period";
 import Exams from "./Pages/ExamSchedule";
 import Performance from "./Pages/Performance";
 import About from "./Pages/About";
@@ -18,7 +18,7 @@ function App() {
     <Router>
       <div className="flex h-screen">
         <Sidebar />
-        <div className="flex-grow">
+        <div className="flex-grow overflow-y-auto">
           <Routes>
             <Route
               path="/"
@@ -37,10 +37,10 @@ function App() {
               }
             />
             <Route
-              path="/report"
+              path="/period"
               element={
-                <PageLayout userName={userName} pageTitle="Report">
-                  <Report />
+                <PageLayout userName={userName} pageTitle="Period">
+                  <Period />
                 </PageLayout>
               }
             />

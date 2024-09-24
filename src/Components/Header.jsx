@@ -7,7 +7,7 @@ import studentIcon from "../assets/Vector.png";
 
 const Header = ({ userName, pageTitle }) => {
   return (
-    <header className="w-full  bg-white shadow-md p-4 fixed top-0 left-0 flex items-center justify-between z-10">
+    <header className="w-full  bg-white  p-4 fixed top-0 left-0 flex items-center justify-between z-10">
       <div className="sidebar__header p-6 flex flex-col items-center">
         <div className="sidebar__logo flex items-center">
           <img

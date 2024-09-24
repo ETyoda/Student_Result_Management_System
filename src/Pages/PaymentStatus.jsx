@@ -10,7 +10,7 @@ function PaymentStatus() {
     paymentDate: '2024-09-05',
     paymentMethod: 'Mobile Payment',
   };
-
+ 
   return (
     <div className="ml-64 flex-1 bg-gray-100 p-6 mt-[65px]">
       <PageLayout userName="Abebe" pageTitle="Payment Status">

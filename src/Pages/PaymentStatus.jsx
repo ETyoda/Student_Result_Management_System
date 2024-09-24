@@ -1,37 +1,49 @@
 import PageLayout from "../Components/PageLayout";
 
-const ParentSides = () => {
-    return (
-        <div className="ml-64 flex-1 bg-gray-100 p-6 mt-[65px] min-h-screen">
-            <PageLayout userName="Abebe" pageTitle="Payment Method">
-                <div className="bg-white shadow-lg rounded-lg p-8">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Parent Dashboard</h2>
-                    <p className="text-gray-600 mb-6">
-                        Welcome to the Parent Dashboard! Here you can view your childs performance
-                        and manage school-related tasks.
-                    </p>
+function PaymentStatus() {
+  const paymentData = {
 
-                    <div className="flex justify-between items-center">
-                        <div>
-                            <h3 className="text-lg font-medium text-gray-700">Childs Performance Overview</h3>
-                            <p className="text-sm text-gray-500">
-                                View detailed performance reports and insights.
-                            </p>
-                        </div>
-                        <button
-                            className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300"
-                            onClick={() => {
-                                // Logic to pay the school fee
-                                console.log("Pay school fee");
-                            }}
-                        >
-                            Pay School Fee
-                        </button>
-                    </div>
-                </div>
-            </PageLayout>
+    studentName: 'Abraham Yohannes',
+    studentId: 'ST/2213/6',
+    amount: '200 Birr',
+    status: 'Paid',
+    paymentDate: '2024-09-05',
+    paymentMethod: 'Mobile Payment',
+  };
+
+  return (
+    <div className="ml-64 flex-1 bg-gray-100 p-6 mt-[65px]">
+      <PageLayout userName="Abebe" pageTitle="Payment Status">
+        {/* Styled Table */}
+        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+          <table className="w-full text-sm text-left text-gray-800 border border-gray-200">
+            <thead className="text-xs font-semibold uppercase bg-gray-100 text-gray-600">
+              <tr>
+                <th scope="col" className="py-3 px-6 border border-gray-300">Student Name</th>
+                <th scope="col" className="py-3 px-6 border border-gray-300">Student Id </th>
+
+                <th scope="col" className="py-3 px-6 border border-gray-300">Amount</th>
+                <th scope="col" className="py-3 px-6 border border-gray-300">Status</th>
+                <th scope="col" className="py-3 px-6 border border-gray-300">Payment Date</th>
+                <th scope="col" className="py-3 px-6 border border-gray-300">Payment Method</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="hover:bg-gray-50">
+                <td className="py-4 px-6 border border-gray-300">{paymentData.studentName}</td>
+                <td className="py-4 px-6 border border-gray-300">{paymentData.studentId}</td>
+
+                <td className="py-4 px-6 border border-gray-300">{paymentData.amount}</td>
+                <td className="py-4 px-6 border border-gray-300">{paymentData.status}</td>
+                <td className="py-4 px-6 border border-gray-300">{paymentData.paymentDate}</td>
+                <td className="py-4 px-6 border border-gray-300">{paymentData.paymentMethod}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    );
-};
+      </PageLayout>
+    </div>
+  );
+}
 
-export default ParentSides;
+export default PaymentStatus;

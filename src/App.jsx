@@ -73,7 +73,7 @@ function App() {
              <Route
               path="/paymentstatus"
               element={
-                <PageLayout userName={userName} pageTitle="ParenPage">
+                <PageLayout userName={userName} pageTitle="paymentstatus">
                   <PaymentStatus />
                 </PageLayout>
               }
